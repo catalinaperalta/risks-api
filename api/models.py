@@ -26,11 +26,14 @@ class RiskField(models.Model):
 		choices=FIELD_CHOICES,
 		default='TEXT')
 
-	risk = models.ForeignKey(Risk, on_delete=models.CASCADE)
+	risk = models.ForeignKey(Risk, related_name='risk_fields', on_delete=models.CASCADE)
 
 	class Meta:
 		ordering = ('name',)
 		verbose_name = "riskfield"
+
+	def __unicode__(self):
+		return '%s: %s' % (self.name, self.description)
 
 class Insurer(models.Model):
 	name = models.CharField(max_length=100)
