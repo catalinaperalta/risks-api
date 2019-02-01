@@ -10,6 +10,7 @@ class RiskFieldSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'description', 'value', 'field_type', 'risk')
 
 class RiskSerializer(serializers.ModelSerializer):
+    # Operation to reverse the relationship in many to one models so that the api can return a risk type with all of its related risk fields
     risk_fields = RiskFieldSerializer(many=True, required=False)
 
     class Meta:
