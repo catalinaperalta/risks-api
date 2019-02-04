@@ -7,6 +7,7 @@ This is the backend application, created using DJANGO Rest Framework, that serve
 * Entity Relationship Diagram - the diagram only depicts the Risk section of the application. The file is in the main project directory and is called [ER_RisksApp.png](https://github.com/catalinaperalta/risks-api/blob/master/ER_RisksApp.png).
 * The ORM classes of the tables implemented can be found in the api/ folder in [models.py](https://github.com/catalinaperalta/risks-api/blob/master/api/models.py).
 * Tests can be found in the api/ folder in [tests.py](https://github.com/catalinaperalta/risks-api/blob/master/api/tests.py)
+* The [quiz.py](https://github.com/catalinaperalta/risks-api/blob/master/quiz.py) file that was used to find the project description can be found in the main directory. 
 
 ## Getting Started with risks-api
 
